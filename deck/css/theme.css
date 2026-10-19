@@ -202,6 +202,26 @@
 .reveal .event-badge b { color: var(--ink); font-weight: 700; }
 .reveal .event-badge .eb-ico { width: 20px; height: 20px; color: var(--c-7band); flex: 0 0 auto; }
 
+/* UC2026 click-to-zoom (setupImageZoom in deck.js). Fixed overlay on <body>;
+   the image is a 94vw x 94vh box with object-fit:contain, so it is always
+   centred and grows from / shrinks back to the centre (scale + fade). */
+.reveal img.zoomable { cursor: zoom-in; }
+#imgZoom {
+  position: fixed; inset: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(15,18,22,0); cursor: zoom-out;
+  transition: background .24s ease;
+}
+#imgZoom[hidden] { display: none; }
+#imgZoom img {
+  width: 94vw; height: 94vh; object-fit: contain;
+  transform: scale(.9); opacity: 0;
+  transition: transform .24s ease, opacity .24s ease;
+}
+#imgZoom.on { background: rgba(15,18,22,.85); }
+#imgZoom.on img { transform: scale(1); opacity: 1; }
+@media (prefers-reduced-motion: reduce) { #imgZoom, #imgZoom img { transition: none; } }
+
 .reveal .slide-fn {
   position: absolute; bottom: 14px; left: 18px; right: 208px;
   font-size: 12px; line-height: 1.25; color: var(--ink-faint);

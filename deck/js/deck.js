@@ -122,7 +122,48 @@
     setupSigMode();
     setupRotateHint();
     setupEventBadge();
+    setupImageZoom();
   });
+
+  /* UC2026: click any content image (.fig / .bigfig) to view it full-screen.
+     The overlay lives on <body> (outside reveal's scaled canvas) and the image
+     grows from / shrinks back to the screen centre. Click or any key closes it;
+     while open, keys are swallowed so the slides behind never advance. */
+  function setupImageZoom() {
+    var ov = document.createElement('div');
+    ov.id = 'imgZoom'; ov.hidden = true;
+    ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-label', 'Enlarged image');
+    ov.innerHTML = '<img alt="">';
+    document.body.appendChild(ov);
+    var big = ov.querySelector('img'), closing = null;
+
+    function open(img) {
+      var src = img.currentSrc || img.src || img.getAttribute('data-src');
+      if (!src) return;
+      if (closing) { clearTimeout(closing); closing = null; }
+      big.src = src; big.alt = img.alt || '';
+      ov.hidden = false;
+      void ov.offsetWidth;               // commit the start state, then animate
+      ov.classList.add('on');
+    }
+    function close() {
+      if (ov.hidden || closing) return;
+      ov.classList.remove('on');
+      closing = setTimeout(function () { ov.hidden = true; big.removeAttribute('src'); closing = null; }, 240);
+    }
+
+    document.querySelectorAll('.reveal .fig img, .reveal .bigfig img').forEach(function (img) {
+      img.classList.add('zoomable');
+      img.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); open(img); });
+    });
+    ov.addEventListener('click', close);
+    window.addEventListener('keydown', function (e) {
+      if (ov.hidden) return;
+      e.preventDefault(); e.stopPropagation(); close();
+    }, true);
+    deck.on('slidechanged', close);
+    window.__zoom = { close: close };
+  }
 
   /* UC2026: conference badge in the top band of every slide (same row as the
      Department logo, right side, clear of the fixed EN/EL + menu buttons).

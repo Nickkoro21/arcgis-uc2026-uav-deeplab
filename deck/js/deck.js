@@ -121,7 +121,29 @@
     setupSpectralFilter();
     setupSigMode();
     setupRotateHint();
+    setupEventBadge();
   });
+
+  /* UC2026: conference badge in the top band of every slide (same row as the
+     Department logo, right side, clear of the fixed EN/EL + menu buttons).
+     Injected from one place so the wording can change in a single edit. */
+  function setupEventBadge() {
+    var html =
+      '<svg class="eb-ico" viewBox="0 0 24 24" aria-hidden="true">' +
+        '<circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.6"/>' +
+        '<path d="M2 12h20M12 2c3 3.2 3 16.8 0 20M12 2c-3 3.2-3 16.8 0 20" fill="none" stroke="currentColor" stroke-width="1.4"/>' +
+      '</svg>' +
+      '<span class="eb-txt">' +
+        '<span class="lang-el"><b>Συνάντηση Χρηστών ArcGIS</b><br>Ελλάδας – Κύπρου 2026</span>' +
+        '<span class="lang-en"><b>ArcGIS User Conference</b><br>Greece – Cyprus 2026</span>' +
+      '</span>';
+    document.querySelectorAll('.reveal .slides > section').forEach(function (s) {
+      var b = document.createElement('div');
+      b.className = 'event-badge';
+      b.innerHTML = html;
+      s.appendChild(b);
+    });
+  }
 
   /* Mobile-only portrait hint: dense academic slides scale down a lot in
      portrait, so nudge viewers to landscape. CSS decides WHEN it shows
@@ -442,6 +464,7 @@
     function toggle() { document.body.classList.toggle('lang-el'); apply(); }
     btn.addEventListener('click', toggle);
     document.body.appendChild(btn);
+    document.body.classList.add('lang-el');   // UC2026: Greek is the default language
     apply();
     document.addEventListener('keydown', function (e) {
       var tag = (e.target && e.target.tagName || '').toLowerCase();
@@ -580,7 +603,7 @@
     { s:'L · Conclusions',         t:'Two horizons (future work)' },
     { s:'L · Conclusions',         t:'Thank you' }
   ];
-  var excluded = new Set([7, 39, 46, 48, 49]);
+  var excluded = new Set([]);   // UC2026: all slides active (defence deck skipped 7,39,46,48,49)
   var prevH = 0, explicitJump = -1;
   function firstIncluded(from, dir, total) {
     for (var i = from; i >= 0 && i < total; i += dir) { if (!excluded.has(i)) return i; }

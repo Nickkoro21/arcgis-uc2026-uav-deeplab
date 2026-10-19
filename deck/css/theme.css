@@ -187,6 +187,21 @@
    to avoid the logo-on-logo collision */
 .reveal section:has(.bigfig) .logo-bar { display: none; }
 
+/* UC2026 conference badge (injected by setupEventBadge in deck.js):
+   top band, same row as the Department logo, right side — right:200px keeps
+   it clear of the fixed EN/EL + menu buttons at every screen size. */
+.reveal .event-badge {
+  position: absolute; top: 6px; right: 200px; z-index: 5;
+  display: flex; align-items: center; gap: 8px;
+  height: 38px; padding: 0 12px 0 9px;
+  border-left: 3px solid var(--c-7band);
+  background: var(--paper-2);
+  color: var(--ink-soft); text-align: left;
+  font-size: 12.5px; line-height: 1.2; letter-spacing: 0.01em;
+}
+.reveal .event-badge b { color: var(--ink); font-weight: 700; }
+.reveal .event-badge .eb-ico { width: 20px; height: 20px; color: var(--c-7band); flex: 0 0 auto; }
+
 .reveal .slide-fn {
   position: absolute; bottom: 14px; left: 18px; right: 208px;
   font-size: 12px; line-height: 1.25; color: var(--ink-faint);

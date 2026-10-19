@@ -1496,6 +1496,67 @@
       </div>
     </section>
 
+    <!-- ===================== UC2026 – Building Analysis tool, 3 slides ====== -->
+    <!-- Screenshots: github.com/Nickkoro21/PostProcessing-Toolbox docs/images/buildings_A|B|C.jpg -->
+    <section data-transition="slide" class="tool-walk">
+      <div class="kicker"><span class="lang-en">Map &amp; tool · Building Analysis 1/3 · parameters</span><span class="lang-el">Χάρτης &amp; εργαλείο · Building Analysis 1/3 · παράμετροι</span></div>
+      <h2 class="slide-title"><span class="lang-en">Building Analysis: <em>one dialog, every rule</em></span><span class="lang-el">Building Analysis: <em>ένα παράθυρο, όλοι οι κανόνες</em></span></h2>
+      <div class="cols s-40-60" style="align-items:start;">
+        <div class="fig"><img data-src="../assets/toolbox/buildings_A.jpg" alt="Building Analysis tool dialog in ArcGIS Pro" style="max-height:470px;"></div>
+        <ol class="steps">
+          <li><b><span class="lang-en">Inputs.</span><span class="lang-el">Είσοδοι.</span></b> <span class="lang-en">The classified raster (DeepLabV3) and the Building class value (2), plus the nDSM (m) and thermal (°C) rasters used for enrichment. Area of interest, output CRS and cell size are optional.</span><span class="lang-el">Ο ταξινομημένος raster (DeepLabV3) και η τιμή της κλάσης Building (2), μαζί με τα nDSM (m) και θερμικό (°C) για τον εμπλουτισμό. Προαιρετικά: περιοχή ενδιαφέροντος, CRS εξόδου, μέγεθος κελιού.</span></li>
+          <li><b><span class="lang-en">Acceptance rules.</span><span class="lang-el">Κανόνες αποδοχής.</span></b> <span class="lang-en">Area between <span class="rule">5 and 1,000 m²</span> and mean nDSM <span class="rule">≥ 1 m</span>; polygons with no nDSM value are rejected.</span><span class="lang-el">Έκταση από <span class="rule">5 έως 1.000 m²</span> και μέση nDSM <span class="rule">≥ 1 m</span>· τα πολύγωνα χωρίς τιμή nDSM απορρίπτονται.</span></li>
+          <li><b><span class="lang-en">Clean-up.</span><span class="lang-el">Καθάρισμα.</span></b> <span class="lang-en">Majority Filter (8 neighbours, 1 pass) removes isolated noise pixels before vectorization.</span><span class="lang-el">Majority Filter (8 γείτονες, 1 πέρασμα): αφαιρεί μεμονωμένα pixels θορύβου πριν τη διανυσματοποίηση.</span></li>
+          <li><b><span class="lang-en">Regularization.</span><span class="lang-el">Κανονικοποίηση.</span></b> <span class="lang-en">Regularize Building Footprint, <span class="rule">RIGHT_ANGLES</span>, tolerance 0.2 m.</span><span class="lang-el">Regularize Building Footprint, <span class="rule">RIGHT_ANGLES</span>, ανοχή 0,2 m.</span></li>
+          <li><b><span class="lang-en">Output.</span><span class="lang-el">Έξοδος.</span></b> <span class="lang-en">Polygons and, optionally, centroid points in one output folder.</span><span class="lang-el">Πολύγωνα και, προαιρετικά, κεντροειδή σε έναν φάκελο εξόδου.</span></li>
+        </ol>
+      </div>
+      <div class="slide-fn"><span class="lang-en">ArcGIS Python Toolbox (.pyt) · Spatial Analyst + 3D Analyst · github.com/Nickkoro21/PostProcessing-Toolbox</span><span class="lang-el">ArcGIS Python Toolbox (.pyt) · Spatial Analyst + 3D Analyst · github.com/Nickkoro21/PostProcessing-Toolbox</span></div>
+      <div class="logo-bar">
+        <img data-src="../assets/logos/tmima_logo.png" alt="Department">
+        <img data-src="../assets/logos/RSGIS_logo.png" alt="RSGIS Lab">
+      </div>
+    </section>
+
+    <section data-transition="slide" class="tool-walk">
+      <div class="kicker"><span class="lang-en">Map &amp; tool · Building Analysis 2/3 · run, phases 0–4</span><span class="lang-el">Χάρτης &amp; εργαλείο · Building Analysis 2/3 · εκτέλεση, φάσεις 0–4</span></div>
+      <h2 class="slide-title"><span class="lang-en">From pixels to <em>regular footprints</em></span><span class="lang-el">Από pixels σε <em>κανονικά αποτυπώματα</em></span></h2>
+      <div class="cols s-40-60" style="align-items:start;">
+        <div class="fig"><img data-src="../assets/toolbox/buildings_B.jpg" alt="Building Analysis messages, phases 0 to 5" style="max-height:470px;"></div>
+        <ol class="steps" style="counter-reset: s -1;">
+          <li><b><span class="lang-en">Input validation.</span><span class="lang-el">Έλεγχος εισόδων.</span></b> <span class="lang-en">CRS check, common cell size (0.0452 m) and study area = intersection of the inputs (17.46 ha).</span><span class="lang-el">Έλεγχος CRS, κοινό μέγεθος κελιού (0,0452 m) και περιοχή μελέτης = τομή των εισόδων (17,46 ha).</span></li>
+          <li><b><span class="lang-en">Extract the class.</span><span class="lang-el">Εξαγωγή της κλάσης.</span></b> <span class="lang-en"><code>Con(VALUE = 2)</code> turns the classified raster into a binary building mask.</span><span class="lang-el"><code>Con(VALUE = 2)</code>: ο ταξινομημένος raster γίνεται δυαδική μάσκα κτιρίων.</span></li>
+          <li><b><span class="lang-en">Morphological filtering.</span><span class="lang-el">Μορφολογικό φιλτράρισμα.</span></b> <span class="lang-en">Majority Filter smooths the mask.</span><span class="lang-el">Το Majority Filter εξομαλύνει τη μάσκα.</span></li>
+          <li><b><span class="lang-en">Vectorization.</span><span class="lang-el">Διανυσματοποίηση.</span></b> <span class="lang-en">Raster to Polygon gives <span class="rule">264</span> raw polygons with stair-stepped pixel edges.</span><span class="lang-el">Το Raster to Polygon δίνει <span class="rule">264</span> ακατέργαστα πολύγωνα με «σκαλωτές» ακμές pixel.</span></li>
+          <li><b><span class="lang-en">Regularize Building Footprint.</span><span class="lang-el">Regularize Building Footprint.</span></b> <span class="lang-en">Straight edges and right angles (tolerance 0.2 m): <span class="rule">264 → 264</span>, none collapsed.</span><span class="lang-el">Ευθείες ακμές και ορθές γωνίες (ανοχή 0,2 m): <span class="rule">264 → 264</span>, κανένα δεν χάθηκε.</span></li>
+        </ol>
+      </div>
+      <div class="slide-fn"><span class="lang-en">Every phase reports to the Geoprocessing messages, so a run can be audited step by step.</span><span class="lang-el">Κάθε φάση γράφει στα μηνύματα του Geoprocessing, ώστε μια εκτέλεση να ελέγχεται βήμα-βήμα.</span></div>
+      <div class="logo-bar">
+        <img data-src="../assets/logos/tmima_logo.png" alt="Department">
+        <img data-src="../assets/logos/RSGIS_logo.png" alt="RSGIS Lab">
+      </div>
+    </section>
+
+    <section data-transition="slide" class="tool-walk">
+      <div class="kicker"><span class="lang-en">Map &amp; tool · Building Analysis 3/3 · results, phases 5–8</span><span class="lang-el">Χάρτης &amp; εργαλείο · Building Analysis 3/3 · αποτελέσματα, φάσεις 5–8</span></div>
+      <h2 class="slide-title"><span class="lang-en">Rule-based classification, <em>traceable output</em></span><span class="lang-el">Ταξινόμηση με κανόνες, <em>ιχνηλάσιμη έξοδος</em></span></h2>
+      <div class="cols s-40-60" style="align-items:start;">
+        <div class="fig"><img data-src="../assets/toolbox/buildings_C.jpg" alt="Building Analysis messages, phases 5 to 8 and summary" style="max-height:470px;"></div>
+        <ol class="steps" style="counter-reset: s 4;">
+          <li><b><span class="lang-en">Geometry &amp; MBR.</span><span class="lang-el">Γεωμετρία &amp; MBR.</span></b> <span class="lang-en">Area, perimeter and the minimum bounding rectangle (length, width, azimuth, L/W ratio).</span><span class="lang-el">Έκταση, περίμετρος και ελάχιστο περιγεγραμμένο ορθογώνιο (μήκος, πλάτος, αζιμούθιο, λόγος L/W).</span></li>
+          <li><b><span class="lang-en">Attribute enrichment.</span><span class="lang-el">Εμπλουτισμός.</span></b> <span class="lang-en">Mean nDSM height and mean temperature per polygon (Zonal Statistics), plus Polsby–Popper compactness 4πA/P².</span><span class="lang-el">Μέσο ύψος nDSM και μέση θερμοκρασία ανά πολύγωνο (Zonal Statistics), συν συμπαγότητα Polsby–Popper 4πA/P².</span></li>
+          <li><b><span class="lang-en">Classification.</span><span class="lang-el">Ταξινόμηση.</span></b> <span class="lang-en">Each polygon gets a <code>Class</code> and a <code>Reason</code>: <span class="rule">82 buildings</span>, 182 rejected (180 too small, 1 too large, 1 nDSM too low).</span><span class="lang-el">Κάθε πολύγωνο παίρνει <code>Class</code> και <code>Reason</code>: <span class="rule">82 κτίρια</span>, 182 απορρίψεις (180 μικρή έκταση, 1 μεγάλη, 1 χαμηλό nDSM).</span></li>
+          <li><b><span class="lang-en">Export.</span><span class="lang-el">Εξαγωγή.</span></b> <span class="lang-en"><code>building_results.shp</code> (all polygons, accepted and rejected), <code>building_points.shp</code> (264 centroids) and <code>building_log.json</code> with every parameter and count, for reproducibility.</span><span class="lang-el"><code>building_results.shp</code> (όλα τα πολύγωνα, αποδεκτά και απορριφθέντα), <code>building_points.shp</code> (264 κεντροειδή) και <code>building_log.json</code> με όλες τις παραμέτρους και τα πλήθη, για αναπαραγωγιμότητα.</span></li>
+        </ol>
+      </div>
+      <div class="slide-fn"><span class="lang-en">17.46 ha processed in 2 min 44 s · 4.7 buildings / ha.</span><span class="lang-el">17,46 ha σε 2′ 44″ · 4,7 κτίρια / ha.</span></div>
+      <div class="logo-bar">
+        <img data-src="../assets/logos/tmima_logo.png" alt="Department">
+        <img data-src="../assets/logos/RSGIS_logo.png" alt="RSGIS Lab">
+      </div>
+    </section>
+
     <!-- ===================== Slides 47–50 – Per-class layouts =============== -->
     <section data-transition="slide">
       <div class="kicker"><span class="lang-en">Map &amp; tool · output layout – vehicles</span><span class="lang-el">Χάρτης &amp; εργαλείο · διάταξη εξόδου – vehicles</span></div>
@@ -1681,12 +1742,12 @@
         <span class="lang-en">
           <b>Nikolaos Koroniadis</b> · MSc “Geography &amp; Applied Geoinformatics”, University of the Aegean<br><br>
           Supervisor: Assist. Prof. Dr. Christos Vasilakos<br><br>
-          Mytilene &amp; Kalamata, 2026
+          Athens, 2026
         </span>
         <span class="lang-el">
           <b>Νικόλαος Κορωνιάδης</b> · ΠΜΣ «Γεωγραφία &amp; Εφαρμοσμένη Γεωπληροφορική», Πανεπιστήμιο Αιγαίου<br><br>
           Επιβλέπων: Επίκ. Καθηγητής Δρ. Χρήστος Βασιλάκος<br><br>
-          Μυτιλήνη &amp; Καλαμάτα, 2026
+          Αθήνα, 2026
         </span>
       </div>
     </section>

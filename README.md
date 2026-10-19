@@ -1,25 +1,25 @@
 <div align="center">
 
-# 🛰️ MSc Thesis Defence — 7-Band vs RGB Semantic Segmentation
+# 🛰️ Classification of Multispectral & Thermal UAV Images with DeepLab v3
 
-### Automatic classification of multispectral & thermal UAV imagery with CNNs
+### Talk at the ArcGIS User Conference Greece – Cyprus 2026 · Athens
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![reveal.js](https://img.shields.io/badge/reveal.js-5.x-F2A93B)](https://revealjs.com/)
 [![KaTeX](https://img.shields.io/badge/KaTeX-offline-329932)](https://katex.org/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-181717?logo=github)](https://nickkoro21.github.io/lesvos-altum-defence/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-181717?logo=github)](https://nickkoro21.github.io/arcgis-uc2026-uav-deeplab/)
 [![Bilingual EN / ΕΛ](https://img.shields.io/badge/Bilingual-EN%20%2F%20%CE%95%CE%9B-2E86AB)](#controls)
-[![Status](https://img.shields.io/badge/Status-Defence%20Ready-success)](#)
+[![ArcGIS User Conference 2026](https://img.shields.io/badge/ArcGIS%20User%20Conference-Greece%20%E2%80%93%20Cyprus%202026-2C7AC3)](#)
 
-[**▶ Open the presentation**](https://nickkoro21.github.io/lesvos-altum-defence/) ·
-[**📊 Source code**](https://github.com/Nickkoro21/lesvos-altum-defence) ·
+[**▶ Open the presentation**](https://nickkoro21.github.io/arcgis-uc2026-uav-deeplab/) ·
+[**📊 Source code**](https://github.com/Nickkoro21/arcgis-uc2026-uav-deeplab) ·
 [**🎓 University of the Aegean**](https://www.aegean.gr/)
 
 </div>
 
 ---
 
-**Development of a GIS Application for the Automatic Classification of Multispectral & Thermal UAV Images Using Convolutional Neural Networks** — an offline, self-contained [reveal.js](https://revealjs.com/) presentation for the MSc thesis defence, *Geography & Applied Geoinformatics*, **University of the Aegean**. Fully bilingual 🇬🇧 **EN** / 🇬🇷 **ΕΛ**, switchable in place on any slide.
+**Classification of Multispectral & Thermal UAV Images with DeepLab v3**: an offline, self-contained [reveal.js](https://revealjs.com/) presentation for the **ArcGIS User Conference Greece – Cyprus 2026** (Συνάντηση Χρηστών ArcGIS Ελλάδας – Κύπρου 2026), Athens, 22 October 2026. It presents the work of the MSc thesis *Development of a GIS Application for the Automatic Classification of Multispectral & Thermal UAV Images Using Convolutional Neural Networks* (*Geography & Applied Geoinformatics*, **University of the Aegean**). Fully bilingual 🇬🇷 **ΕΛ** (default) / 🇬🇧 **EN**, switchable in place on any slide.
 
 ---
 
@@ -87,8 +87,6 @@ Or just open `deck/index.html` in a browser — everything is self-contained.
 ## Author
 
 **Nikolaos Koroniadis** — MSc *Geography & Applied Geoinformatics*, University of the Aegean · Mytilene, 2026
-
-**Supervisor:** Assist. Prof. Dr. Christos Vasilakos — Department of Geography, University of the Aegean
 
 ### Companion deliverables
 

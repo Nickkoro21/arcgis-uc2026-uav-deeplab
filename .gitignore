@@ -7,3 +7,6 @@ deck/_shots/
 *.pdf
 .DS_Store
 Thumbs.db
+
+# Local working notes (never published)
+_local/

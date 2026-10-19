@@ -4,7 +4,7 @@
 
 ### Automatic classification of multispectral & thermal UAV imagery with CNNs
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![reveal.js](https://img.shields.io/badge/reveal.js-5.x-F2A93B)](https://revealjs.com/)
 [![KaTeX](https://img.shields.io/badge/KaTeX-offline-329932)](https://katex.org/)
 [![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Live%20Demo-181717?logo=github)](https://nickkoro21.github.io/lesvos-altum-defence/)
@@ -106,5 +106,5 @@ If you refer to this work, please cite the MSc thesis. A machine-readable [`CITA
 
 ## License
 
-Released under the [MIT License](LICENSE) — © 2026 Nikolaos Koroniadis.
+Released under the [GNU General Public License v3.0](LICENSE) — © 2026 Nikolaos Koroniadis.
 Vendored libraries ([reveal.js](https://revealjs.com/), [KaTeX](https://katex.org/)) retain their own MIT licences.

@@ -152,7 +152,7 @@
       closing = setTimeout(function () { ov.hidden = true; big.removeAttribute('src'); closing = null; }, 240);
     }
 
-    document.querySelectorAll('.reveal .fig img, .reveal .bigfig img').forEach(function (img) {
+    document.querySelectorAll('.reveal .fig img, .reveal .bigfig img, .reveal .task-img-card img, .reveal .centerfig img').forEach(function (img) {
       img.classList.add('zoomable');
       img.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); open(img); });
     });
@@ -647,7 +647,8 @@
     { s:'L · Conclusions',         t:'Two horizons (future work)' },
     { s:'L · Conclusions',         t:'Thank you' }
   ];
-  var excluded = new Set([]);   // UC2026: all slides active (defence deck skipped 7,39,46,48,49)
+  // UC2026 run-through: hidden (1-based) 4, 6-10, 30-40, 55 -> still reachable from the menu
+  var excluded = new Set([3, 5, 6, 7, 8, 9, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 54]);
   var prevH = 0, explicitJump = -1;
   function firstIncluded(from, dir, total) {
     for (var i = from; i >= 0 && i < total; i += dir) { if (!excluded.has(i)) return i; }

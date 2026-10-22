@@ -647,8 +647,8 @@
     { s:'L · Conclusions',         t:'Two horizons (future work)' },
     { s:'L · Conclusions',         t:'Thank you' }
   ];
-  // UC2026 run-through: hidden (1-based) 4, 6-10, 30-40, 55 -> still reachable from the menu
-  var excluded = new Set([3, 5, 6, 7, 8, 9, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 54]);
+  // UC2026 run-through: hidden (1-based) 4, 6-10, 17, 30-40, 55 -> still reachable from the menu
+  var excluded = new Set([3, 5, 6, 7, 8, 9, 16, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 54]);
   var prevH = 0, explicitJump = -1;
   function firstIncluded(from, dir, total) {
     for (var i = from; i >= 0 && i < total; i += dir) { if (!excluded.has(i)) return i; }

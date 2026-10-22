@@ -276,16 +276,16 @@
     </section>
 
     <!-- ===================== Slide 13 – Terminology glossary =============== -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Architecture · a shared vocabulary</span><span class="lang-el">Αρχιτεκτονική · ένα κοινό λεξιλόγιο</span></div>
       <h2 class="slide-title"><span class="lang-en">A shared vocabulary for the rest of the talk</span><span class="lang-el">Ένα κοινό λεξιλόγιο για την υπόλοιπη παρουσίαση</span></h2>
       <div class="gloss-grid">
-        <div class="gloss-card fragment"><div class="g-term">Backbone</div><div class="g-def"><span class="lang-en">Pretrained CNN (ResNet-101) that extracts hierarchical features.</span><span class="lang-el">Προεκπαιδευμένο CNN (ResNet-101) που εξάγει ιεραρχικά χαρακτηριστικά.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term">Transfer learning</div><div class="g-def"><span class="lang-en">Reuse ImageNet-pretrained weights, fine-tune on our data – less data needed.</span><span class="lang-el">Επαναχρησιμοποίηση βαρών προεκπαιδευμένων σε ImageNet, fine-tuning στα δεδομένα μας – λιγότερα δεδομένα.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term"><span class="lang-en">Receptive field</span><span class="lang-el">Δεκτικό πεδίο</span></div><div class="g-def"><span class="lang-en">The input region a single output neuron “sees”.</span><span class="lang-el">Η περιοχή εισόδου που «βλέπει» ένας νευρώνας εξόδου.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term"><span class="lang-en">Atrous / dilated conv.</span><span class="lang-el">Atrous / διεσταλμένη συνέλιξη</span></div><div class="g-def"><span class="lang-en">Inserts gaps in the kernel to widen the receptive field without losing resolution.</span><span class="lang-el">Εισάγει κενά στον πυρήνα ώστε να διευρύνει το δεκτικό πεδίο χωρίς απώλεια ανάλυσης.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term">ASPP</div><div class="g-def"><span class="lang-en">Atrous Spatial Pyramid Pooling – parallel atrous convs at multiple rates.</span><span class="lang-el">Atrous Spatial Pyramid Pooling – παράλληλες atrous συνελίξεις σε πολλούς ρυθμούς.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term">PointRend</div><div class="g-def"><span class="lang-en">Boundary-refinement module that treats segmentation as point-wise rendering.</span><span class="lang-el">Μονάδα εκλέπτυνσης ορίων που αντιμετωπίζει την κατάτμηση ως rendering ανά σημείο.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:0" data-fragment-index="0"><div class="g-term">Backbone</div><div class="g-def"><span class="lang-en">Pretrained CNN (ResNet-101) that extracts hierarchical features.</span><span class="lang-el">Προεκπαιδευμένο CNN (ResNet-101) που εξάγει ιεραρχικά χαρακτηριστικά.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:1" data-fragment-index="0"><div class="g-term">Transfer learning</div><div class="g-def"><span class="lang-en">Reuse ImageNet-pretrained weights, fine-tune on our data – less data needed.</span><span class="lang-el">Επαναχρησιμοποίηση βαρών προεκπαιδευμένων σε ImageNet, fine-tuning στα δεδομένα μας – λιγότερα δεδομένα.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:2" data-fragment-index="0"><div class="g-term"><span class="lang-en">Receptive field</span><span class="lang-el">Δεκτικό πεδίο</span></div><div class="g-def"><span class="lang-en">The input region a single output neuron “sees”.</span><span class="lang-el">Η περιοχή εισόδου που «βλέπει» ένας νευρώνας εξόδου.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:3" data-fragment-index="0"><div class="g-term"><span class="lang-en">Atrous / dilated conv.</span><span class="lang-el">Atrous / διεσταλμένη συνέλιξη</span></div><div class="g-def"><span class="lang-en">Inserts gaps in the kernel to widen the receptive field without losing resolution.</span><span class="lang-el">Εισάγει κενά στον πυρήνα ώστε να διευρύνει το δεκτικό πεδίο χωρίς απώλεια ανάλυσης.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:4" data-fragment-index="0"><div class="g-term">ASPP</div><div class="g-def"><span class="lang-en">Atrous Spatial Pyramid Pooling – parallel atrous convs at multiple rates.</span><span class="lang-el">Atrous Spatial Pyramid Pooling – παράλληλες atrous συνελίξεις σε πολλούς ρυθμούς.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:5" data-fragment-index="0"><div class="g-term">PointRend</div><div class="g-def"><span class="lang-en">Boundary-refinement module that treats segmentation as point-wise rendering.</span><span class="lang-el">Μονάδα εκλέπτυνσης ορίων που αντιμετωπίζει την κατάτμηση ως rendering ανά σημείο.</span></div></div>
       </div>
       <div class="slide-fn">Marmanis et al. (2016); Penatti et al. (2015).</div>
       <div class="logo-bar">
@@ -299,7 +299,7 @@
     <!-- ====================================================================== -->
 
     <!-- ===================== Slide 14 – Sensor Altum-PT ==================== -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Data · the MicaSense Altum-PT sensor</span><span class="lang-el">Δεδομένα · ο αισθητήρας MicaSense Altum-PT</span></div>
       <h2 class="slide-title"><span class="lang-en">One sensor, <em>three subsystems</em>: multispectral, panchromatic &amp; thermal</span><span class="lang-el">Ένας αισθητήρας, <em>τρία υποσυστήματα</em>: πολυφασματικό, παγχρωματικό &amp; θερμικό</span></h2>
       <div class="cols s-50-50">
@@ -309,10 +309,10 @@
         </div>
         <div>
           <ul class="chall">
-            <li class="fragment"><span class="lang-en"><b>5 multispectral</b> bands (VNIR): Blue 475 · Green 560 · Red 668 · RedEdge 717 · NIR 842 nm.</span><span class="lang-el"><b>5 πολυφασματικές</b> ζώνες (VNIR): Blue 475 · Green 560 · Red 668 · RedEdge 717 · NIR 842 nm.</span></li>
-            <li class="fragment"><span class="lang-en"><b>1 panchromatic</b> (12.4 MP) – high-resolution detail.</span><span class="lang-el"><b>1 παγχρωματική</b> (12,4 MP) – λεπτομέρεια υψηλής ανάλυσης.</span></li>
-            <li class="fragment"><span class="lang-en"><b>1 thermal LWIR</b> (~11 μm, 320×256) – surface temperature.</span><span class="lang-el"><b>1 θερμική LWIR</b> (~11 μm, 320×256) – θερμοκρασία επιφάνειας.</span></li>
-            <li class="fragment"><span class="lang-en">At 120 m AGL: ~5.3 cm/px (MS), ~2.5 cm/px (PAN).</span><span class="lang-el">Στα 120 m AGL: ~5,3 cm/px (MS), ~2,5 cm/px (PAN).</span></li>
+            <li class="fragment" style="--sd:0" data-fragment-index="0"><span class="lang-en"><b>5 multispectral</b> bands (VNIR): Blue 475 · Green 560 · Red 668 · RedEdge 717 · NIR 842 nm.</span><span class="lang-el"><b>5 πολυφασματικές</b> ζώνες (VNIR): Blue 475 · Green 560 · Red 668 · RedEdge 717 · NIR 842 nm.</span></li>
+            <li class="fragment" style="--sd:1" data-fragment-index="0"><span class="lang-en"><b>1 panchromatic</b> (12.4 MP) – high-resolution detail.</span><span class="lang-el"><b>1 παγχρωματική</b> (12,4 MP) – λεπτομέρεια υψηλής ανάλυσης.</span></li>
+            <li class="fragment" style="--sd:2" data-fragment-index="0"><span class="lang-en"><b>1 thermal LWIR</b> (~11 μm, 320×256) – surface temperature.</span><span class="lang-el"><b>1 θερμική LWIR</b> (~11 μm, 320×256) – θερμοκρασία επιφάνειας.</span></li>
+            <li class="fragment" style="--sd:3" data-fragment-index="0"><span class="lang-en">At 120 m AGL: ~5.3 cm/px (MS), ~2.5 cm/px (PAN).</span><span class="lang-el">Στα 120 m AGL: ~5,3 cm/px (MS), ~2,5 cm/px (PAN).</span></li>
           </ul>
         </div>
       </div>
@@ -324,7 +324,7 @@
     </section>
 
     <!-- ===================== Slide 15 – Study area Pamfila ================= -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Data · study area</span><span class="lang-el">Δεδομένα · περιοχή μελέτης</span></div>
       <h2 class="slide-title"><span class="lang-en">Pamfila, Lesvos: a small scene that holds <em>all seven classes</em></span><span class="lang-el">Παμφίλα, Λέσβος: μια μικρή σκηνή που περιέχει <em>και τις επτά κλάσεις</em></span></h2>
       <div class="cols s-65-35">
@@ -334,10 +334,10 @@
         </div>
         <div>
           <ul class="chall">
-            <li class="fragment"><span class="lang-en">Cover: housing, crops, olives, roads, soil.</span><span class="lang-el">Κάλυψη: κατοικίες, καλλιέργειες, ελιές, δρόμοι, έδαφος.</span></li>
-            <li class="fragment"><span class="lang-en"><b>All 7 classes</b> in one compact scene.</span><span class="lang-el"><b>Και οι 7 κλάσεις</b> σε μία συμπαγή σκηνή.</span></li>
-            <li class="fragment"><span class="lang-en">Coverage <b>29.19 ha</b> (587 × 497 m).</span><span class="lang-el">Έκταση <b>29,19 ha</b> (587 × 497 m).</span></li>
-            <li class="fragment"><span class="lang-en">CRS WGS 84 / UTM 35N · EGM96.</span><span class="lang-el">Σύστημα αναφοράς WGS 84 / UTM 35N · EGM96.</span></li>
+            <li class="fragment" style="--sd:0" data-fragment-index="0"><span class="lang-en">Cover: housing, crops, olives, roads, soil.</span><span class="lang-el">Κάλυψη: κατοικίες, καλλιέργειες, ελιές, δρόμοι, έδαφος.</span></li>
+            <li class="fragment" style="--sd:1" data-fragment-index="0"><span class="lang-en"><b>All 7 classes</b> in one compact scene.</span><span class="lang-el"><b>Και οι 7 κλάσεις</b> σε μία συμπαγή σκηνή.</span></li>
+            <li class="fragment" style="--sd:2" data-fragment-index="0"><span class="lang-en">Coverage <b>29.19 ha</b> (587 × 497 m).</span><span class="lang-el">Έκταση <b>29,19 ha</b> (587 × 497 m).</span></li>
+            <li class="fragment" style="--sd:3" data-fragment-index="0"><span class="lang-en">CRS WGS 84 / UTM 35N · EGM96.</span><span class="lang-el">Σύστημα αναφοράς WGS 84 / UTM 35N · EGM96.</span></li>
           </ul>
         </div>
       </div>
@@ -348,7 +348,7 @@
     </section>
 
     <!-- ===================== Slide 16 – Three D2M projects (Πίν.3) ========= -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Data · photogrammetry – three independent projects</span><span class="lang-el">Δεδομένα · φωτογραμμετρία – τρία ανεξάρτητα projects</span></div>
       <h2 class="slide-title"><span class="lang-en">Three Drone2Map projects, <em>one per subsystem</em>, then fused</span><span class="lang-el">Τρία projects Drone2Map, <em>ένα ανά υποσύστημα</em>, και μετά σύντηξη</span></h2>
       <div class="small muted" style="margin:-.1em 0 .3em;"><span class="lang-en">SfM → tie points → bundle adjustment → densification → orthorectification → DSM · RTK/PPK, no GCPs · flight 11 Sep 2025</span><span class="lang-el">SfM → tie points → bundle adjustment → πύκνωση → ορθοδιόρθωση → DSM · RTK/PPK, χωρίς GCPs · πτήση 11 Σεπ 2025</span></div>
@@ -357,15 +357,15 @@
           <tr><th><span class="lang-en">Parameter</span><span class="lang-el">Παράμετρος</span></th><th class="num"><span class="lang-en">Multispectral</span><span class="lang-el">Πολυφασματικό</span></th><th class="num"><span class="lang-en">Panchromatic</span><span class="lang-el">Παγχρωματικό</span></th><th class="num"><span class="lang-en">Thermal</span><span class="lang-el">Θερμικό</span></th></tr>
         </thead>
         <tbody>
-          <tr class="fragment"><td><span class="lang-en">Mission size (GPx)</span><span class="lang-el">Μέγεθος αποστολής (GPx)</span></td><td class="num">9.0</td><td class="num">7.0</td><td class="num">1.0</td></tr>
-          <tr class="fragment"><td><span class="lang-en">Coverage (ha)</span><span class="lang-el">Έκταση (ha)</span></td><td class="num">29.2</td><td class="num">26.0</td><td class="num">32.5</td></tr>
-          <tr class="fragment"><td><span class="lang-en">Mean GSD (cm)</span><span class="lang-el">Μέσο GSD (cm)</span></td><td class="num">4.5</td><td class="num">2.1</td><td class="num">28.0</td></tr>
-          <tr class="fragment"><td><span class="lang-en">Calibrated images</span><span class="lang-el">Βαθμονομημένες εικόνες</span></td><td class="num">99.83%</td><td class="num">99.83%</td><td class="num">99.83%</td></tr>
-          <tr class="fragment"><td><span class="lang-en">Tie-point RMSE (px)</span><span class="lang-el">RMSE tie-point (px)</span></td><td class="num">0.31</td><td class="num">0.38</td><td class="num">0.25</td></tr>
-          <tr class="fragment"><td><span class="lang-en">GCPs / checkpoints</span><span class="lang-el">GCPs / checkpoints</span></td><td class="num">0 / 0</td><td class="num">0 / 0</td><td class="num">0 / 0</td></tr>
+          <tr class="fragment" style="--sd:0" data-fragment-index="0"><td><span class="lang-en">Mission size (GPx)</span><span class="lang-el">Μέγεθος αποστολής (GPx)</span></td><td class="num">9.0</td><td class="num">7.0</td><td class="num">1.0</td></tr>
+          <tr class="fragment" style="--sd:1" data-fragment-index="0"><td><span class="lang-en">Coverage (ha)</span><span class="lang-el">Έκταση (ha)</span></td><td class="num">29.2</td><td class="num">26.0</td><td class="num">32.5</td></tr>
+          <tr class="fragment" style="--sd:2" data-fragment-index="0"><td><span class="lang-en">Mean GSD (cm)</span><span class="lang-el">Μέσο GSD (cm)</span></td><td class="num">4.5</td><td class="num">2.1</td><td class="num">28.0</td></tr>
+          <tr class="fragment" style="--sd:3" data-fragment-index="0"><td><span class="lang-en">Calibrated images</span><span class="lang-el">Βαθμονομημένες εικόνες</span></td><td class="num">99.83%</td><td class="num">99.83%</td><td class="num">99.83%</td></tr>
+          <tr class="fragment" style="--sd:4" data-fragment-index="0"><td><span class="lang-en">Tie-point RMSE (px)</span><span class="lang-el">RMSE tie-point (px)</span></td><td class="num">0.31</td><td class="num">0.38</td><td class="num">0.25</td></tr>
+          <tr class="fragment" style="--sd:5" data-fragment-index="0"><td><span class="lang-en">GCPs / checkpoints</span><span class="lang-el">GCPs / checkpoints</span></td><td class="num">0 / 0</td><td class="num">0 / 0</td><td class="num">0 / 0</td></tr>
         </tbody>
       </table>
-      <div class="callout fragment fade-up" style="margin-top:.45em; margin-right:185px;"><span class="lang-en"><strong>No GCPs or checkpoints</strong>: tie-point RMSE &lt; 0.4 px is the <em>internal</em> fit. Absolute geolocation comes from the <strong>RTK fix</strong> — GPSXYAccuracy ≈ <strong>1.5 cm</strong>, GPSZAccuracy ≈ <strong>2.6 cm</strong> per image (DJI Matrice 350 RTK).</span><span class="lang-el"><strong>Χωρίς GCPs ή checkpoints</strong>: το RMSE tie-point &lt; 0,4 px είναι η <em>εσωτερική</em> προσαρμογή. Η απόλυτη γεωαναφορά προκύπτει από το <strong>RTK fix</strong> — GPSXYAccuracy ≈ <strong>1,5 cm</strong>, GPSZAccuracy ≈ <strong>2,6 cm</strong> ανά εικόνα (DJI Matrice 350 RTK).</span></div>
+      <div class="callout fragment fade-up" style="--sd:6;margin-top:.45em; margin-right:185px;" data-fragment-index="0"><span class="lang-en"><strong>No GCPs or checkpoints</strong>: tie-point RMSE &lt; 0.4 px is the <em>internal</em> fit. Absolute geolocation comes from the <strong>RTK fix</strong> — GPSXYAccuracy ≈ <strong>1.5 cm</strong>, GPSZAccuracy ≈ <strong>2.6 cm</strong> per image (DJI Matrice 350 RTK).</span><span class="lang-el"><strong>Χωρίς GCPs ή checkpoints</strong>: το RMSE tie-point &lt; 0,4 px είναι η <em>εσωτερική</em> προσαρμογή. Η απόλυτη γεωαναφορά προκύπτει από το <strong>RTK fix</strong> — GPSXYAccuracy ≈ <strong>1,5 cm</strong>, GPSZAccuracy ≈ <strong>2,6 cm</strong> ανά εικόνα (DJI Matrice 350 RTK).</span></div>
       <div class="slide-fn">ESRI (n.d.) – ArcGIS Drone2Map processing reports.</div>
       <div class="logo-bar">
         <img data-src="../assets/logos/tmima_logo.png" alt="Department">
@@ -374,15 +374,15 @@
     </section>
 
     <!-- ===================== Slide 17 – Metadata namespaces =============== -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Data · frame metadata</span><span class="lang-el">Δεδομένα · μεταδεδομένα καρέ</span></div>
       <h2 class="slide-title"><span class="lang-en">Every frame carries <em>five metadata namespaces</em>, the basis for calibration &amp; georeferencing</span><span class="lang-el">Κάθε καρέ φέρει <em>πέντε χώρους ονομάτων μεταδεδομένων</em>, τη βάση για βαθμονόμηση &amp; γεωαναφορά</span></h2>
       <div class="ns-list">
-        <div class="ns-row fragment"><span class="ns-tag">EXIF</span><span class="ns-desc"><span class="lang-en">Camera model &amp; serial, date/time, <b>GPS lat/lon</b>, ellipsoid altitude, image dimensions.</span><span class="lang-el">Μοντέλο &amp; σειριακός κάμερας, ημ/ώρα, <b>GPS lat/lon</b>, υψόμετρο ελλειψοειδούς, διαστάσεις εικόνας.</span></span></div>
-        <div class="ns-row fragment"><span class="ns-tag">XMP-Camera</span><span class="ns-desc"><span class="lang-en">Per-band optics: <b>central wavelength / FWHM</b>, focal length, IMU yaw/pitch/roll, GPS accuracy.</span><span class="lang-el">Οπτικά ανά ζώνη: <b>κεντρικό μήκος κύματος / FWHM</b>, εστιακή απόσταση, IMU yaw/pitch/roll, ακρίβεια GPS.</span></span></div>
-        <div class="ns-row fragment"><span class="ns-tag">XMP-MicaSense</span><span class="ns-desc"><span class="lang-en">Sensor state: <b>imager temperature</b>, trigger method.</span><span class="lang-el">Κατάσταση αισθητήρα: <b>θερμοκρασία αισθητήρα</b>, τρόπος ενεργοποίησης λήψης.</span></span></div>
-        <div class="ns-row fragment"><span class="ns-tag">XMP-DLS</span><span class="ns-desc"><span class="lang-en">Downwelling Light Sensor: irradiance + serial / firmware – drives <b>radiometric calibration</b>.</span><span class="lang-el">Downwelling Light Sensor: ακτινοβολία + σειριακός / firmware – οδηγεί τη <b>ραδιομετρική βαθμονόμηση</b>.</span></span></div>
-        <div class="ns-row fragment"><span class="ns-tag">FLIR</span><span class="ns-desc"><span class="lang-en">Thermal (LWIR) calibration parameters for the temperature band.</span><span class="lang-el">Παράμετροι θερμικής (LWIR) βαθμονόμησης για τη ζώνη θερμοκρασίας.</span></span></div>
+        <div class="ns-row fragment" style="--sd:0" data-fragment-index="0"><span class="ns-tag">EXIF</span><span class="ns-desc"><span class="lang-en">Camera model &amp; serial, date/time, <b>GPS lat/lon</b>, ellipsoid altitude, image dimensions.</span><span class="lang-el">Μοντέλο &amp; σειριακός κάμερας, ημ/ώρα, <b>GPS lat/lon</b>, υψόμετρο ελλειψοειδούς, διαστάσεις εικόνας.</span></span></div>
+        <div class="ns-row fragment" style="--sd:1" data-fragment-index="0"><span class="ns-tag">XMP-Camera</span><span class="ns-desc"><span class="lang-en">Per-band optics: <b>central wavelength / FWHM</b>, focal length, IMU yaw/pitch/roll, GPS accuracy.</span><span class="lang-el">Οπτικά ανά ζώνη: <b>κεντρικό μήκος κύματος / FWHM</b>, εστιακή απόσταση, IMU yaw/pitch/roll, ακρίβεια GPS.</span></span></div>
+        <div class="ns-row fragment" style="--sd:2" data-fragment-index="0"><span class="ns-tag">XMP-MicaSense</span><span class="ns-desc"><span class="lang-en">Sensor state: <b>imager temperature</b>, trigger method.</span><span class="lang-el">Κατάσταση αισθητήρα: <b>θερμοκρασία αισθητήρα</b>, τρόπος ενεργοποίησης λήψης.</span></span></div>
+        <div class="ns-row fragment" style="--sd:3" data-fragment-index="0"><span class="ns-tag">XMP-DLS</span><span class="ns-desc"><span class="lang-en">Downwelling Light Sensor: irradiance + serial / firmware – drives <b>radiometric calibration</b>.</span><span class="lang-el">Downwelling Light Sensor: ακτινοβολία + σειριακός / firmware – οδηγεί τη <b>ραδιομετρική βαθμονόμηση</b>.</span></span></div>
+        <div class="ns-row fragment" style="--sd:4" data-fragment-index="0"><span class="ns-tag">FLIR</span><span class="ns-desc"><span class="lang-en">Thermal (LWIR) calibration parameters for the temperature band.</span><span class="lang-el">Παράμετροι θερμικής (LWIR) βαθμονόμησης για τη ζώνη θερμοκρασίας.</span></span></div>
       </div>
       <div class="logo-bar">
         <img data-src="../assets/logos/tmima_logo.png" alt="Department">
@@ -696,16 +696,16 @@
     </section>
 
     <!-- ===================== Slide 30 – Metrics primer ===================== -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Evaluation · the metrics, briefly</span><span class="lang-el">Αξιολόγηση · οι μετρικές, εν συντομία</span></div>
       <h2 class="slide-title"><span class="lang-en">How we measure a map: from the <em>confusion matrix</em> to mIoU</span><span class="lang-el">Πώς μετράμε έναν χάρτη: από τον <em>Πίνακα Σύγχυσης</em> στο mIoU</span></h2>
       <div class="gloss-grid">
-        <div class="gloss-card fragment"><div class="g-term"><span class="lang-en">Confusion matrix</span><span class="lang-el">Πίνακας Σύγχυσης</span></div><div class="g-eq">$C_{ij}$</div><div class="g-def"><span class="lang-en">Rows = truth $i$, columns = prediction $j$; the diagonal is correct.</span><span class="lang-el">Γραμμές = αλήθεια $i$, στήλες = πρόβλεψη $j$· η διαγώνιος είναι σωστή.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term"><span class="lang-en">Overall Accuracy</span><span class="lang-el">Συνολική Ακρίβεια</span></div><div class="g-eq">$OA=\dfrac{\sum_i C_{ii}}{N}$</div><div class="g-def"><span class="lang-en">Share of all points correct – optimistic under imbalance.</span><span class="lang-el">Ποσοστό όλων των σωστών σημείων – αισιόδοξη υπό ανισορροπία.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term">Cohen's κ</div><div class="g-eq">$\kappa=\dfrac{p_o-p_e}{1-p_e}$</div><div class="g-def"><span class="lang-en">Agreement corrected for what chance alone would give.</span><span class="lang-el">Συμφωνία διορθωμένη ως προς ό,τι θα έδινε μόνη η τύχη.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term">Precision · Recall · F1</div><div class="g-eq">$$\begin{aligned}P&=\tfrac{TP}{TP+FP}\\[2pt]R&=\tfrac{TP}{TP+FN}\\[2pt]F_1&=\tfrac{2PR}{P+R}\end{aligned}$$</div><div class="g-def"><span class="lang-en">Correctness · completeness · their harmonic mean.</span><span class="lang-el">Ορθότητα · πληρότητα · ο αρμονικός τους μέσος.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term">Macro-F1</div><div class="g-eq">$\text{Macro-}F_1=\dfrac{1}{C}\sum_{c}F_{1,c}$</div><div class="g-def"><span class="lang-en">Mean F1 over classes, equal weight – the imbalance-fair headline.</span><span class="lang-el">Μέσο F1 στις κλάσεις, ίσο βάρος – η δίκαιη ως προς την ανισορροπία μετρική.</span></div></div>
-        <div class="gloss-card fragment"><div class="g-term">IoU · mIoU</div><div class="g-eq">$IoU=\dfrac{TP}{TP+FP+FN}$</div><div class="g-def"><span class="lang-en">Region overlap; averaged over classes = mIoU.</span><span class="lang-el">Επικάλυψη περιοχών· μέσος όρος στις κλάσεις = mIoU.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:0" data-fragment-index="0"><div class="g-term"><span class="lang-en">Confusion matrix</span><span class="lang-el">Πίνακας Σύγχυσης</span></div><div class="g-eq">$C_{ij}$</div><div class="g-def"><span class="lang-en">Rows = truth $i$, columns = prediction $j$; the diagonal is correct.</span><span class="lang-el">Γραμμές = αλήθεια $i$, στήλες = πρόβλεψη $j$· η διαγώνιος είναι σωστή.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:1" data-fragment-index="0"><div class="g-term"><span class="lang-en">Overall Accuracy</span><span class="lang-el">Συνολική Ακρίβεια</span></div><div class="g-eq">$OA=\dfrac{\sum_i C_{ii}}{N}$</div><div class="g-def"><span class="lang-en">Share of all points correct – optimistic under imbalance.</span><span class="lang-el">Ποσοστό όλων των σωστών σημείων – αισιόδοξη υπό ανισορροπία.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:2" data-fragment-index="0"><div class="g-term">Cohen's κ</div><div class="g-eq">$\kappa=\dfrac{p_o-p_e}{1-p_e}$</div><div class="g-def"><span class="lang-en">Agreement corrected for what chance alone would give.</span><span class="lang-el">Συμφωνία διορθωμένη ως προς ό,τι θα έδινε μόνη η τύχη.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:3" data-fragment-index="0"><div class="g-term">Precision · Recall · F1</div><div class="g-eq">$$\begin{aligned}P&=\tfrac{TP}{TP+FP}\\[2pt]R&=\tfrac{TP}{TP+FN}\\[2pt]F_1&=\tfrac{2PR}{P+R}\end{aligned}$$</div><div class="g-def"><span class="lang-en">Correctness · completeness · their harmonic mean.</span><span class="lang-el">Ορθότητα · πληρότητα · ο αρμονικός τους μέσος.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:4" data-fragment-index="0"><div class="g-term">Macro-F1</div><div class="g-eq">$\text{Macro-}F_1=\dfrac{1}{C}\sum_{c}F_{1,c}$</div><div class="g-def"><span class="lang-en">Mean F1 over classes, equal weight – the imbalance-fair headline.</span><span class="lang-el">Μέσο F1 στις κλάσεις, ίσο βάρος – η δίκαιη ως προς την ανισορροπία μετρική.</span></div></div>
+        <div class="gloss-card fragment" style="--sd:5" data-fragment-index="0"><div class="g-term">IoU · mIoU</div><div class="g-eq">$IoU=\dfrac{TP}{TP+FP+FN}$</div><div class="g-def"><span class="lang-en">Region overlap; averaged over classes = mIoU.</span><span class="lang-el">Επικάλυψη περιοχών· μέσος όρος στις κλάσεις = mIoU.</span></div></div>
       </div>
       <div class="slide-fn">Congalton &amp; Green (2019); Cohen (1960).</div>
       <div class="logo-bar">
@@ -1267,17 +1267,17 @@
     </section>
 
     <!-- ===================== Slide 44 – PostProcessing Toolbox ============= -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Map &amp; tool · PostProcessing Toolbox (open source)</span><span class="lang-el">Χάρτης &amp; εργαλείο · PostProcessing Toolbox (ανοιχτού κώδικα)</span></div>
       <h2 class="slide-title"><span class="lang-en">From raster to <em>usable vectors</em>: a four-tool toolbox</span><span class="lang-el">Από raster σε <em>αξιοποιήσιμα διανύσματα</em>: μια εργαλειοθήκη τεσσάρων εργαλείων</span></h2>
       <p class="lead" style="max-width:46ch;"><span class="lang-en">An ArcGIS Python Toolbox that turns the classified raster into structured vector layers using <strong>transparent, deterministic</strong> geometric, elevation &amp; topological rules – no black box.</span><span class="lang-el">Μια ArcGIS Python Toolbox που μετατρέπει τον ταξινομημένο raster σε δομημένα διανυσματικά επίπεδα με <strong>διαφανείς, ντετερμινιστικούς</strong> γεωμετρικούς, υψομετρικούς &amp; τοπολογικούς κανόνες – κανένα μαύρο κουτί.</span></p>
       <table class="tbl" style="font-size:.68em; margin-top:.4em;">
         <thead><tr><th><span class="lang-en">Tool</span><span class="lang-el">Εργαλείο</span></th><th><span class="lang-en">Output geometry</span><span class="lang-el">Γεωμετρία εξόδου</span></th><th class="num"><span class="lang-en">Accepted / rejected</span><span class="lang-el">Αποδεκτά / απορριφθέντα</span></th><th class="num"><span class="lang-en">Area</span><span class="lang-el">Έκταση</span></th></tr></thead>
         <tbody>
-          <tr class="fragment"><td><span class="swatch sw-vehicle"></span>Vehicle Analysis</td><td><span class="lang-en">Polygon + points</span><span class="lang-el">Πολύγωνο + σημεία</span></td><td class="num">53 / 50</td><td class="num">415 m²</td></tr>
-          <tr class="fragment"><td><span class="swatch sw-building"></span>Building Analysis</td><td><span class="lang-en">Polygon + points</span><span class="lang-el">Πολύγωνο + σημεία</span></td><td class="num">82 / 182</td><td class="num">11,030 m²</td></tr>
-          <tr class="fragment"><td><span class="swatch sw-tree"></span>Tree Analysis</td><td><span class="lang-en">Polygon + points</span><span class="lang-el">Πολύγωνο + σημεία</span></td><td class="num">573 / 321</td><td class="num">23,970 m²</td></tr>
-          <tr class="fragment"><td><span class="swatch sw-road"></span>Road Analysis</td><td><span class="lang-en">Polygon + points + polyline</span><span class="lang-el">Πολύγωνο + σημεία + πολυγραμμή</span></td><td class="num">44 / 254</td><td class="num">9,540 m²</td></tr>
+          <tr class="fragment" style="--sd:0" data-fragment-index="0"><td><span class="swatch sw-vehicle"></span>Vehicle Analysis</td><td><span class="lang-en">Polygon + points</span><span class="lang-el">Πολύγωνο + σημεία</span></td><td class="num">53 / 50</td><td class="num">415 m²</td></tr>
+          <tr class="fragment" style="--sd:1" data-fragment-index="0"><td><span class="swatch sw-building"></span>Building Analysis</td><td><span class="lang-en">Polygon + points</span><span class="lang-el">Πολύγωνο + σημεία</span></td><td class="num">82 / 182</td><td class="num">11,030 m²</td></tr>
+          <tr class="fragment" style="--sd:2" data-fragment-index="0"><td><span class="swatch sw-tree"></span>Tree Analysis</td><td><span class="lang-en">Polygon + points</span><span class="lang-el">Πολύγωνο + σημεία</span></td><td class="num">573 / 321</td><td class="num">23,970 m²</td></tr>
+          <tr class="fragment" style="--sd:3" data-fragment-index="0"><td><span class="swatch sw-road"></span>Road Analysis</td><td><span class="lang-en">Polygon + points + polyline</span><span class="lang-el">Πολύγωνο + σημεία + πολυγραμμή</span></td><td class="num">44 / 254</td><td class="num">9,540 m²</td></tr>
         </tbody>
       </table>
       <div class="slide-fn">Zorzi et al. (2021); Sujatha &amp; Selvathi (2015). · AGPLv3 on GitHub.</div>
@@ -1607,19 +1607,19 @@
     <!-- ====================================================================== -->
 
     <!-- ===================== Slide 51 – Deliverables ======================= -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Closing · deliverables &amp; applications</span><span class="lang-el">Κλείσιμο · παραδοτέα &amp; εφαρμογές</span></div>
       <h2 class="slide-title"><span class="lang-en">What you can <em>use today</em></span><span class="lang-el">Τι μπορείτε να <em>χρησιμοποιήσετε σήμερα</em></span></h2>
       <div class="cols s-65-35">
         <div>
           <ul class="deliv">
-            <li class="fragment" data-fragment-index="1"><span class="d-name"><span class="lang-en">7-Band model (.dlpk)</span><span class="lang-el">Μοντέλο 7-Band (.dlpk)</span></span> – <a class="d-url" href="https://sdi-portal.aegean.gr/portal/home/" target="_blank" rel="noopener">Aegean SDI Portal · ArcGIS</a></li>
-            <li class="fragment" data-fragment-index="1"><span class="d-name"><span class="lang-en">RGB baseline model (.dlpk)</span><span class="lang-el">Μοντέλο RGB – βάση (.dlpk)</span></span> – <a class="d-url" href="https://sdi-portal.aegean.gr/portal/home/item.html?id=ce9071b7c74a4a068cc7d21144450127" target="_blank" rel="noopener">Aegean SDI Portal · ArcGIS</a></li>
-            <li class="fragment" data-fragment-index="2"><span class="d-name">PostProcessing Toolbox</span> – <a class="d-url" href="https://github.com/Nickkoro21/PostProcessing-Toolbox" target="_blank" rel="noopener"><span class="lang-en">GitHub · AGPLv3 (copyleft)</span><span class="lang-el">GitHub · AGPLv3 (copyleft)</span></a></li>
-            <li class="fragment" data-fragment-index="2"><span class="d-name"><span class="lang-en">Interactive methodology map</span><span class="lang-el">Διαδραστικός χάρτης μεθοδολογίας</span></span> – <a class="d-url" href="https://nickkoro21.github.io/lesvos-altum-segmentation/" target="_blank" rel="noopener">GitHub Pages · web app</a></li>
-            <li class="fragment" data-fragment-index="2"><span class="d-name"><span class="lang-en">7-Band vs RGB dashboard</span><span class="lang-el">Dashboard 7-Band vs RGB</span></span> – <a class="d-url" href="https://nickkoro21.github.io/thesis-7band-vs-rgb/" target="_blank" rel="noopener">GitHub Pages · web app</a></li>
-            <li class="fragment" data-fragment-index="2"><span class="d-name">Spectral 3D Explorer</span> – <a class="d-url" href="https://huggingface.co/spaces/NickKoro21/spectral-3d-explorer" target="_blank" rel="noopener">Hugging Face · Space</a></li>
-            <li class="fragment" data-fragment-index="2"><span class="d-name"><span class="lang-en">Agentic GeoAI walkthrough</span><span class="lang-el">Παρουσίαση agentic GeoAI</span></span> – <a class="d-url" href="https://nickkoro21.github.io/geospatial-ai-pipeline-walkthrough/" target="_blank" rel="noopener">GitHub Pages · web app</a></li>
+            <li class="fragment" style="--sd:0" data-fragment-index="0"><span class="d-name"><span class="lang-en">7-Band model (.dlpk)</span><span class="lang-el">Μοντέλο 7-Band (.dlpk)</span></span> – <a class="d-url" href="https://sdi-portal.aegean.gr/portal/home/" target="_blank" rel="noopener">Aegean SDI Portal · ArcGIS</a></li>
+            <li class="fragment" style="--sd:1" data-fragment-index="0"><span class="d-name"><span class="lang-en">RGB baseline model (.dlpk)</span><span class="lang-el">Μοντέλο RGB – βάση (.dlpk)</span></span> – <a class="d-url" href="https://sdi-portal.aegean.gr/portal/home/item.html?id=ce9071b7c74a4a068cc7d21144450127" target="_blank" rel="noopener">Aegean SDI Portal · ArcGIS</a></li>
+            <li class="fragment" style="--sd:2" data-fragment-index="0"><span class="d-name">PostProcessing Toolbox</span> – <a class="d-url" href="https://github.com/Nickkoro21/PostProcessing-Toolbox" target="_blank" rel="noopener"><span class="lang-en">GitHub · AGPLv3 (copyleft)</span><span class="lang-el">GitHub · AGPLv3 (copyleft)</span></a></li>
+            <li class="fragment" style="--sd:3" data-fragment-index="0"><span class="d-name"><span class="lang-en">Interactive methodology map</span><span class="lang-el">Διαδραστικός χάρτης μεθοδολογίας</span></span> – <a class="d-url" href="https://nickkoro21.github.io/lesvos-altum-segmentation/" target="_blank" rel="noopener">GitHub Pages · web app</a></li>
+            <li class="fragment" style="--sd:4" data-fragment-index="0"><span class="d-name"><span class="lang-en">7-Band vs RGB dashboard</span><span class="lang-el">Dashboard 7-Band vs RGB</span></span> – <a class="d-url" href="https://nickkoro21.github.io/thesis-7band-vs-rgb/" target="_blank" rel="noopener">GitHub Pages · web app</a></li>
+            <li class="fragment" style="--sd:5" data-fragment-index="0"><span class="d-name">Spectral 3D Explorer</span> – <a class="d-url" href="https://huggingface.co/spaces/NickKoro21/spectral-3d-explorer" target="_blank" rel="noopener">Hugging Face · Space</a></li>
+            <li class="fragment" style="--sd:6" data-fragment-index="0"><span class="d-name"><span class="lang-en">Agentic GeoAI walkthrough</span><span class="lang-el">Παρουσίαση agentic GeoAI</span></span> – <a class="d-url" href="https://nickkoro21.github.io/geospatial-ai-pipeline-walkthrough/" target="_blank" rel="noopener">GitHub Pages · web app</a></li>
           </ul>
         </div>
         <div style="text-align:center;">
@@ -1682,16 +1682,16 @@
     </section>
 
     <!-- ===================== Slide 53 – Limitations ======================= -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Closing · limitations</span><span class="lang-el">Κλείσιμο · περιορισμοί</span></div>
       <h2 class="slide-title"><span class="lang-en">What <em>bounds</em> these conclusions</span><span class="lang-el">Τι <em>οριοθετεί</em> αυτά τα συμπεράσματα</span></h2>
       <ul class="chall">
-        <li class="fragment"><span class="lang-en"><b>Single site</b> – one urban typology (Pamfila); transfer to other morphologies needs independent validation.</span><span class="lang-el"><b>Ένας μόνο τόπος</b> – μία αστική τυπολογία (Παμφίλα)· η μεταφορά σε άλλες μορφολογίες χρειάζεται ανεξάρτητη επικύρωση.</span></li>
-        <li class="fragment"><span class="lang-en"><b>Single flight / date / season</b> – the thermal advantage is time-of-day &amp; weather dependent.</span><span class="lang-el"><b>Μία μόνο πτήση / ημερομηνία / εποχή</b> – το θερμικό πλεονέκτημα εξαρτάται από ώρα &amp; καιρό.</span></li>
-        <li class="fragment"><span class="lang-en"><b>Severe class imbalance</b> – Bare Soil dominates; mitigated by focal + dice loss, but it bounds rare-class reliability.</span><span class="lang-el"><b>Έντονη ανισορροπία κλάσεων</b> – το Bare Soil κυριαρχεί· μετριάζεται με focal + dice loss, αλλά περιορίζει την αξιοπιστία στις σπάνιες κλάσεις.</span></li>
-        <li class="fragment"><span class="lang-en"><b>Single architecture</b> – the spectral/spatial balance may differ for transformers or Mamba models.</span><span class="lang-el"><b>Μία μόνο αρχιτεκτονική</b> – η ισορροπία φάσματος/χώρου μπορεί να διαφέρει για transformers ή μοντέλα Mamba.</span></li>
-        <li class="fragment"><span class="lang-en"><b>Plus technical caveats:</b> nDSM quality depends on photogrammetry; cross-environment inference is sensitive to preprocessing.</span><span class="lang-el"><b>Επιπλέον τεχνικές επιφυλάξεις:</b> η ποιότητα του nDSM εξαρτάται από τη φωτογραμμετρία· η συμπερασματολογία σε διαφορετικό περιβάλλον είναι ευαίσθητη στην προεπεξεργασία.</span></li>
-        <li class="fragment"><span class="lang-en"><b>No training seed</b> – ArcGIS "Train Deep Learning Model" exposes none, so re-running an identical model (same hyperparameters &amp; input data) gives <b>very slightly different M1 results</b>. Everything else used a fixed seed, so it is <b>fully reproducible</b>.</span><span class="lang-el"><b>Χωρίς training seed</b> – το ArcGIS «Train Deep Learning Model» δεν εκθέτει, οπότε η επανεκτέλεση ενός πανομοιότυπου μοντέλου (ίδιες υπερπαράμετροι &amp; δεδομένα εισόδου) δίνει <b>ελάχιστα διαφορετικά αποτελέσματα στο M1</b>. Όλα τα υπόλοιπα είχαν σταθερό seed, άρα είναι <b>πλήρως επαναλήψιμα</b>.</span></li>
+        <li class="fragment" style="--sd:0" data-fragment-index="0"><span class="lang-en"><b>Single site</b> – one urban typology (Pamfila); transfer to other morphologies needs independent validation.</span><span class="lang-el"><b>Ένας μόνο τόπος</b> – μία αστική τυπολογία (Παμφίλα)· η μεταφορά σε άλλες μορφολογίες χρειάζεται ανεξάρτητη επικύρωση.</span></li>
+        <li class="fragment" style="--sd:1" data-fragment-index="0"><span class="lang-en"><b>Single flight / date / season</b> – the thermal advantage is time-of-day &amp; weather dependent.</span><span class="lang-el"><b>Μία μόνο πτήση / ημερομηνία / εποχή</b> – το θερμικό πλεονέκτημα εξαρτάται από ώρα &amp; καιρό.</span></li>
+        <li class="fragment" style="--sd:2" data-fragment-index="0"><span class="lang-en"><b>Severe class imbalance</b> – Bare Soil dominates; mitigated by focal + dice loss, but it bounds rare-class reliability.</span><span class="lang-el"><b>Έντονη ανισορροπία κλάσεων</b> – το Bare Soil κυριαρχεί· μετριάζεται με focal + dice loss, αλλά περιορίζει την αξιοπιστία στις σπάνιες κλάσεις.</span></li>
+        <li class="fragment" style="--sd:3" data-fragment-index="0"><span class="lang-en"><b>Single architecture</b> – the spectral/spatial balance may differ for transformers or Mamba models.</span><span class="lang-el"><b>Μία μόνο αρχιτεκτονική</b> – η ισορροπία φάσματος/χώρου μπορεί να διαφέρει για transformers ή μοντέλα Mamba.</span></li>
+        <li class="fragment" style="--sd:4" data-fragment-index="0"><span class="lang-en"><b>Plus technical caveats:</b> nDSM quality depends on photogrammetry; cross-environment inference is sensitive to preprocessing.</span><span class="lang-el"><b>Επιπλέον τεχνικές επιφυλάξεις:</b> η ποιότητα του nDSM εξαρτάται από τη φωτογραμμετρία· η συμπερασματολογία σε διαφορετικό περιβάλλον είναι ευαίσθητη στην προεπεξεργασία.</span></li>
+        <li class="fragment" style="--sd:5" data-fragment-index="0"><span class="lang-en"><b>No training seed</b> – ArcGIS "Train Deep Learning Model" exposes none, so re-running an identical model (same hyperparameters &amp; input data) gives <b>very slightly different M1 results</b>. Everything else used a fixed seed, so it is <b>fully reproducible</b>.</span><span class="lang-el"><b>Χωρίς training seed</b> – το ArcGIS «Train Deep Learning Model» δεν εκθέτει, οπότε η επανεκτέλεση ενός πανομοιότυπου μοντέλου (ίδιες υπερπαράμετροι &amp; δεδομένα εισόδου) δίνει <b>ελάχιστα διαφορετικά αποτελέσματα στο M1</b>. Όλα τα υπόλοιπα είχαν σταθερό seed, άρα είναι <b>πλήρως επαναλήψιμα</b>.</span></li>
       </ul>
       <div class="slide-fn">Buda et al. (2018); Johnson &amp; Khoshgoftaar (2019); Hughes (1968); Ülkü et al. (2022).</div>
       <div class="logo-bar">
@@ -1701,24 +1701,24 @@
     </section>
 
     <!-- ===================== Slide 54 – Future work (two levels) =========== -->
-    <section data-transition="slide">
+    <section class="stagger1s" data-transition="slide">
       <div class="kicker"><span class="lang-en">Closing · future work</span><span class="lang-el">Κλείσιμο · μελλοντική εργασία</span></div>
       <h2 class="slide-title"><span class="lang-en">Two horizons: <em>harden the findings</em>, then make the map think</span><span class="lang-el">Δύο ορίζοντες: <em>εδραίωση των ευρημάτων</em>, μετά να σκεφτεί ο χάρτης</span></h2>
       <div class="cols s-50-50">
         <div class="anat-col">
           <h3><span class="lang-en">Immediate extensions</span><span class="lang-el">Άμεσες επεκτάσεις</span></h3>
-          <div class="anat-row fragment"><span class="lang-en">Multi-temporal &amp; multi-site capture → test the thermal advantage across seasons &amp; typologies.</span><span class="lang-el">Πολυχρονική &amp; πολυτοπική λήψη → έλεγχος του θερμικού πλεονεκτήματος σε εποχές &amp; τυπολογίες.</span></div>
-          <div class="anat-row fragment"><span class="lang-en">Class-aware sampling for imbalance; re-run 7-Band vs RGB on <b>transformers / Mamba</b>.</span><span class="lang-el">Δειγματοληψία με επίγνωση κλάσεων για την ανισορροπία· επανάληψη 7-Band vs RGB σε <b>transformers / Mamba</b>.</span></div>
-          <div class="anat-row fragment"><span class="lang-en">Quantify per-channel contribution with <b>SHAP</b>; capture metadata via <b>FiLM</b>, not pseudo-bands (zero spatial variance wastes capacity).</span><span class="lang-el">Ποσοτικοποίηση συνεισφοράς ανά κανάλι με <b>SHAP</b>· μεταδεδομένα λήψης μέσω <b>FiLM</b>, όχι ψευδο-ζώνες (μηδενική χωρική διακύμανση = σπατάλη).</span></div>
+          <div class="anat-row fragment" style="--sd:0" data-fragment-index="0"><span class="lang-en">Multi-temporal &amp; multi-site capture → test the thermal advantage across seasons &amp; typologies.</span><span class="lang-el">Πολυχρονική &amp; πολυτοπική λήψη → έλεγχος του θερμικού πλεονεκτήματος σε εποχές &amp; τυπολογίες.</span></div>
+          <div class="anat-row fragment" style="--sd:1" data-fragment-index="0"><span class="lang-en">Class-aware sampling for imbalance; re-run 7-Band vs RGB on <b>transformers / Mamba</b>.</span><span class="lang-el">Δειγματοληψία με επίγνωση κλάσεων για την ανισορροπία· επανάληψη 7-Band vs RGB σε <b>transformers / Mamba</b>.</span></div>
+          <div class="anat-row fragment" style="--sd:2" data-fragment-index="0"><span class="lang-en">Quantify per-channel contribution with <b>SHAP</b>; capture metadata via <b>FiLM</b>, not pseudo-bands (zero spatial variance wastes capacity).</span><span class="lang-el">Ποσοτικοποίηση συνεισφοράς ανά κανάλι με <b>SHAP</b>· μεταδεδομένα λήψης μέσω <b>FiLM</b>, όχι ψευδο-ζώνες (μηδενική χωρική διακύμανση = σπατάλη).</span></div>
         </div>
         <div class="anat-col">
           <h3><span class="lang-en">Long-term vision – agentic GeoAI</span><span class="lang-el">Μακροπρόθεσμο όραμα – agentic GeoAI</span></h3>
-          <div class="anat-row fragment"><span class="lang-en">Vectors → <b>PostGIS + pgvector</b>; LLMs query via <b>MCP</b> (Text-to-Spatial-SQL, read-only).</span><span class="lang-el">Διανύσματα → <b>PostGIS + pgvector</b>· τα LLM ερωτούν μέσω <b>MCP</b> (Text-to-Spatial-SQL, μόνο ανάγνωση).</span></div>
-          <div class="anat-row fragment"><span class="lang-en">A <b>multi-agent GeoRAG</b> analyst: orchestrator · retriever · sandbox modeller · reporter.</span><span class="lang-el">Ένας <b>πολυπρακτορικός GeoRAG</b> αναλυτής: orchestrator · retriever · sandbox modeller · reporter.</span></div>
-          <div class="anat-row fragment"><span class="lang-en">Guardrails (fail-closed vs prompt-injection): clarification loop, answer validator, observability + <b>LLM-as-a-judge</b>.</span><span class="lang-el">Δικλείδες (fail-closed έναντι prompt-injection): βρόχος διευκρίνισης, επικυρωτής απαντήσεων, observability + <b>LLM-as-a-judge</b>.</span></div>
+          <div class="anat-row fragment" style="--sd:3" data-fragment-index="0"><span class="lang-en">Vectors → <b>PostGIS + pgvector</b>; LLMs query via <b>MCP</b> (Text-to-Spatial-SQL, read-only).</span><span class="lang-el">Διανύσματα → <b>PostGIS + pgvector</b>· τα LLM ερωτούν μέσω <b>MCP</b> (Text-to-Spatial-SQL, μόνο ανάγνωση).</span></div>
+          <div class="anat-row fragment" style="--sd:4" data-fragment-index="0"><span class="lang-en">A <b>multi-agent GeoRAG</b> analyst: orchestrator · retriever · sandbox modeller · reporter.</span><span class="lang-el">Ένας <b>πολυπρακτορικός GeoRAG</b> αναλυτής: orchestrator · retriever · sandbox modeller · reporter.</span></div>
+          <div class="anat-row fragment" style="--sd:5" data-fragment-index="0"><span class="lang-en">Guardrails (fail-closed vs prompt-injection): clarification loop, answer validator, observability + <b>LLM-as-a-judge</b>.</span><span class="lang-el">Δικλείδες (fail-closed έναντι prompt-injection): βρόχος διευκρίνισης, επικυρωτής απαντήσεων, observability + <b>LLM-as-a-judge</b>.</span></div>
         </div>
       </div>
-      <div class="linkcard fragment fade-up" style="margin-top:.3em; margin-right:190px;">
+      <div class="linkcard fragment fade-up" style="--sd:6;margin-top:.3em; margin-right:190px;" data-fragment-index="0">
         <div class="lc-body">
           <div class="lc-kind"><span class="lang-en">Interactive · reference</span><span class="lang-el">Διαδραστικό · αναφορά</span></div>
           <div class="lc-name"><span class="lang-en">Agentic GeoAI pipeline – walkthrough</span><span class="lang-el">Pipeline agentic GeoAI – αναλυτική παρουσίαση</span></div>

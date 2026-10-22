@@ -713,3 +713,8 @@ body.lang-el #conv-callout { font-size: 0.84em; line-height: 1.2; }
 /* slide 43 — give the longer GR figure caption room under the composite map */
 body.lang-el #composite-fig img { max-height: 372px !important; }
 body.lang-el #composite-fig .figcap { font-size: 0.8em; line-height: 1.2; }
+
+/* UC2026: one click reveals every fragment of the slide, one per second
+   (index.html: section.stagger1s, each fragment has --sd = its order).
+   The delay applies only when showing; going back hides them at once. */
+.reveal section.stagger1s .fragment.visible { transition-delay: calc(var(--sd, 0) * 1s); }

@@ -90,6 +90,8 @@ Or just open `deck/index.html` in a browser — everything is self-contained.
 
 ### Companion deliverables
 
+- [ArcGIS StoryMap: Multi-spectral and Thermal Mapping with MicaSense Altum-PT](https://storymaps.arcgis.com/stories/0d764febde08486cad4290a65b4ecfcd)
+- [Geospatial AI pipeline: walkthrough](https://nickkoro21.github.io/geospatial-ai-pipeline-walkthrough/)
 - [Interactive methodology map](https://nickkoro21.github.io/lesvos-altum-segmentation/)
 - [7-Band vs RGB dashboard](https://nickkoro21.github.io/thesis-7band-vs-rgb/)
 - [PostProcessing Toolbox (ArcGIS, GPLv3)](https://github.com/Nickkoro21/PostProcessing-Toolbox)

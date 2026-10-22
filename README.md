@@ -13,6 +13,7 @@
 
 [**▶ Open the presentation**](https://nickkoro21.github.io/arcgis-uc2026-uav-deeplab/) ·
 [**📊 Source code**](https://github.com/Nickkoro21/arcgis-uc2026-uav-deeplab) ·
+[**📄 Slides (PDF, ΕΛ / EN)**](https://github.com/Nickkoro21/arcgis-uc2026-uav-deeplab/releases/tag/uc2026-slides) ·
 [**🎓 University of the Aegean**](https://www.aegean.gr/)
 
 </div>

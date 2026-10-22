@@ -8,6 +8,7 @@
     maxScale: 1.6,
     viewDistance: 3,
     mobileViewDistance: 1,        // phones: lazy-load only the adjacent slide's images
+    scrollActivationWidth: null,  // UC2026: never auto-switch narrow phones to reveal 5 scroll view; keep the normal deck + rotate hint
     hash: true,
     slideNumber: 'c/t',
     transition: 'slide',          // global; per-slide overridable via data-transition
